@@ -10,57 +10,118 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 400;
 }
-.container{
-    max-width: 1100px;
-    background-color: #ddd;
+
+.container {
+    max-width: 1110px;
     margin: 0 auto;
 }
-:root{
+
+:root {
     --accent-color: #F7654A;
-    --dark-color:#404149;
+    --dark-color: #404149;
     --gray-color: #999999;
-    --white-color:#ffffff;
+    --white-color: #ffffff;
     --background-color: #e5e5e5;
 }
-.text-h2{
+
+.text-h2 {
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 36px;
     text-transform: uppercase;
 }
-.text-h3{
+
+.text-h3 {
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 24px;
 }
-.text-h4{
+
+.text-h4 {
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 21px;
 }
-.text-p{
-    font-family:'Open Sans', sans-serif ;
+
+.text-p {
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
-.text-p-reviews{
-    font-family:'Open Sans', sans-serif ;
+
+.text-p-reviews {
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    line-height: 21px;   
+    line-height: 21px;
 }
 
-.header {}
+.header {
+    min-height: 740px;
+    background-image: url(../img/first-screen-bg.jpg);
+    background-repeat: no-repeat;
+    block-size: cover;
+}
 
-.header__title {}
+.header__title {
+    padding-top: 20px;
+    margin-bottom: 112px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 
-.logo {}
+.logo {
+    width: 60px;
+    height: 60px;
+}
 
-.burger {}
+.burger {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-.burger__line {}
+.burger__line {
+    display: block;
+    width: 21px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 4px;
+}
 
-.h1 {}
+.burger__line:last-child {
+    margin-bottom: 0;
+}
 
-.h4 {}
+.h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 95px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    max-width: 734px;
+    margin: 0 auto 16px;
+}
+
+.h4 {
+    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+    font-weight: 400;
+    max-width: 734px;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
